@@ -1,15 +1,14 @@
 .background{
   background-image: url(../images/map-mob.png);
   background-repeat: no-repeat;
-  background-position-y: 759px;
+  background-position-y: 666px;
 }
 
 .info__title {
   @extend %title;
-  width: 188px;
+  width: 197px;
   margin-bottom: 30px;
 }
-
 
 .boxmap__title {
   font-size: 14px;
@@ -115,3 +114,103 @@
   padding-left: 36px;
   width: 206px;
 }
+
+// SECTION FOR TABLET VERSION
+@media (min-width: 768px){
+  .info__title{
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .boxmap__title{
+    width: 381px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .boxmap__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .boxmap__list-item{
+    width: 188px;
+    padding: 0;
+  }
+
+  .boxmap__list-item:nth-child(3n+3){
+    margin-right: 0px;
+  }
+
+  .boxmap__item-desk{
+    width: 100%;
+  }
+
+  .boxmaptwo{
+    padding-left: 28px;
+  }
+
+  .boxmaptwo__title{
+    width: 207px;
+  }
+
+  .boxmaptwo__list{
+    width: 290px;
+  }
+
+  .boxmaptwo__list-item:first-child{
+    margin-right: 30px;
+  }
+
+  .background{
+    padding: 55px 0;
+    background-image: url(../images/map.png);
+    background-position: center;
+    background-position-x: 309px;
+    background-position-y: 345px;
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
+    width: 703px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .background::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 700px;
+    height: 660px;
+    background-color: rgb(237, 240, 242);
+    top: 25px;
+    left: -25px;
+    z-index: -5;
+  }
+
+  .infosection{
+    margin-bottom: 55px;
+  }
+
+  .infosection__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .infosection__item-desk{
+    width: 640px;
+    padding-left: 78px;
+  }
+
+  .infosection__item-desk::before{
+    top: 5px;
+    left: 45px;
+  }
+}
+
