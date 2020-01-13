@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Acrom-Regular'), local('Acrom-Regular'),
+    url('./fonts/acrom-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/acrom-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Acrom-Bold'), local('Acrom-Bold'),
+    url('./fonts/acrom-bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/acrom-bold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Acrom-ExtraBold'), local('Acrom-ExtraBold'),
+    url('./fonts/acrom-extrabold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/acrob-extrabold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Acrom-Medium'), local('Acrom-Medium'),
+    url('./fonts/acrom-medium.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/acrom-medium.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Acrom-Light'), local('Acrom-Light'),
+    url('./fonts/acrom-light.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/acrom-light.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

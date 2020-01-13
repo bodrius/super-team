@@ -1,0 +1,21 @@
+%title {
+
+  &::before {
+    display: inline-block;
+    content: "[";
+    color: $main-color;
+  }
+
+  &::after{
+    display: inline-block;
+    content: "]";
+    color: $main-color;
+  }
+
+  font-family: $main-font;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 20px;
+  color: $main-color;
+}
+
