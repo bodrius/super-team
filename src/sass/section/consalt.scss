@@ -67,6 +67,7 @@
 
     
     &__item-text{
+        position: relative;
         font-family: $main-font;
         color: $main-color;
         font-size: 16px;
@@ -75,6 +76,17 @@
         padding-top: 40px;
         padding-left: 28px;
         padding-right: 20px;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: #00eaff;
+            left: -25px;
+            top: 30px;
+            position: absolute;
+        }
     }
 
 
