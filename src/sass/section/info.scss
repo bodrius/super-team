@@ -1,0 +1,118 @@
+.info{
+  background-image: url(../images/map-mob.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 790px;
+}
+
+.info__title {
+  @extend %title;
+  width: 188px;
+  margin-bottom: 30px;
+}
+
+
+.boxmap__title {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left; 
+  font-weight: 800; 
+  width: 263px;
+  margin-bottom: 27px;
+}
+
+.boxmap__list{
+  text-align: left;
+}
+
+.boxmap__list-item{
+  padding-left: 17px;
+}
+
+.boxmap__item-count{
+  color: $blue-color;
+  font-weight: 800;
+  margin-bottom: 11px;
+  font-size: 30px;
+}
+
+.boxmap__item-desk{
+  margin-bottom: 30px;
+  line-height: 25px;
+  letter-spacing: -0.46px;
+  width: 225px;
+  font-size: 14px;
+}
+
+.boxmaptwo{
+  margin-bottom: 30px;
+}
+
+.boxmaptwo__title{
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 14px;
+  padding-left: 17px;
+}
+
+.boxmaptwo__list{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  width: 248px;
+}
+
+.boxmaptwo__list-item{
+  width: 98px;
+  padding-left: 17px;
+  width: 233px;
+}
+
+.boxmaptwo__list-item:last-child{
+  padding-left: 0;
+}
+
+
+.boxmaptwo__item-count{
+  font-size: 25px;
+  line-height: 25px;
+  color: $blue-color;
+  font-weight: 800;
+  padding-bottom: 7px;
+}
+
+.boxmaptwo__item-desk{
+  font-size: 10px;
+  line-height: 11px;
+  width: 108px;
+}
+
+.infosection__title{
+  @extend %title;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 23px;
+}
+
+.infosection__list-item{
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 20px;
+  position: relative;
+}
+
+.infosection__item-desk::before{
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: $blue-color;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.infosection__item-desk{
+  padding-left: 36px;
+  width: 206px;
+}
