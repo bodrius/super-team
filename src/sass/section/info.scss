@@ -1,4 +1,4 @@
-.background{
+.background-info{
   background-image: url(../images/map-mob.png);
   background-repeat: no-repeat;
   background-position-y: 666px;
@@ -167,7 +167,7 @@
     margin-right: 30px;
   }
 
-  .background{
+  .background-info{
     padding: 55px 0;
     background-image: url(../images/map.png);
     background-position: center;
@@ -181,7 +181,7 @@
     background-color: #fff;
   }
 
-  .background::before{
+  .background-info::before{
     position: absolute;
     display: inline-block;
     content: "";
@@ -230,7 +230,7 @@
     align-items: flex-end;
   }
 
-  .background{
+  .background-info{
     margin: 0;
   }
 
