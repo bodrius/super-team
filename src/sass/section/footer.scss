@@ -1,37 +1,75 @@
-.footer {
-  background-image: url(../images/bckground/bckmobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  padding-top: 62px;
-  padding-bottom: 34px;
-  width: 100%;
-
-  &__btn {
-    color: $blue-color;
-    font-size: 20px;
-    font-weight: 900;
-    border-bottom: solid 1px $blue-color;
-    text-transform: uppercase;
-    margin-bottom: 300px;
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (min-width: 320px) {
   .footer {
-    background-image: url(../images/bckground/bckmobile@2x.jpg);
+    background-image: url(../images/bckground/bckmobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 62px;
+    padding-bottom: 34px;
+    width: 100%;
+
+    &__btn {
+      color: $blue-color;
+      font-size: 20px;
+      font-weight: 900;
+      border-bottom: solid 1px $blue-color;
+      text-transform: uppercase;
+      margin-bottom: 300px;
+    }
+  }
+
+  .logo-image {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .slogan {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.56;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../images/bckground/bckmobile@2x.jpg);
+    }
   }
 }
 
-.logo-image {
-  margin: 0 auto;
-  text-align: center;
-}
+@media (min-width: 768px) {
+  .container{
+    width: 620px;
+  }
 
-.slogan {
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: -0.56;
+  .slogan{
+    font-size: 18px;
+    line-height: 60px;
+    margin-left: 12px;
+  }
+
+  .logo{
+    padding-top: 15px;
+  }
+
+  .footer {
+    background-image: url(../images/bckground/bcktablet.jpg);
+    padding-bottom: 0px;
+
+    &__btn {
+      font-size: 30px;
+      line-height: 60px;
+      letter-spacing: 0.6px;
+    }
+
+    &-nav{
+      display: flex;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../images/bckground/bcktablet@2x.jpg);
+    }
+  }
 }
