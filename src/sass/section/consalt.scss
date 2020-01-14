@@ -8,12 +8,11 @@
         color: $main-color;
         letter-spacing: -1px;
         text-align: left;
-        padding-top: 38px;
+
     }
 
 
     &__list-item{
-        margin-top: 24px;
         text-align: left;
         position: relative;
                 
@@ -49,6 +48,50 @@
             width: 620px;
         }
     }
+
+
+    @media (max-width: 1199px){
+       .consalt1__title{
+           padding-top: 38px;
+        }
+
+        .consalt1__list-item{
+            margin-top: 24px;
+        }
+    }
+    @media (min-width: 1200px){
+        .container{
+            width: 1140px;
+            padding-top: 120px;
+        }
+
+        .consalt1__container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .consalt1__title{
+            width: 488px;
+            font-size: 48px;
+            line-height: 60px;
+            letter-spacing: -1.92px;
+            font-weight: 800;
+        }
+
+        .consalt1__list{
+            width: 488px;
+            margin-bottom: 100px;
+        }
+
+        .consalt1__item-text{
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        .consalt1__list-item:not(:first-child){
+            margin-top: 30px;
+        }
+    }
 }
 
 .consalt2{
@@ -67,8 +110,40 @@
         padding-top: 38px;
     }
 
+    &__list{
+        counter-reset: numbers;
+    }
+
     &__list-item{
         margin-top: 38px;
+        position: relative;
+        z-index: 1;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 226px;
+            height: 228px;
+            background-color: #cacdce;
+            position: absolute;
+            bottom: -10px;
+            left: 5px;
+            z-index: -1;
+            }
+
+        &::before{
+            counter-increment: numbers;
+            content: "0" counter(numbers);
+            position: absolute;
+            display: block;
+            z-index: -1;
+            color: #fff;
+            z-index: 1;
+            top: -35px;
+            right: 26px;
+            font-size: 50px;
+            font-weight: 700;
+        }
     }
 
     
@@ -82,6 +157,11 @@
         padding-top: 40px;
         padding-left: 28px;
         padding-right: 20px;
+
+
+        &-bold{
+            font-weight: 700;
+        }
 
         &::before{
             content: "";
@@ -103,18 +183,6 @@
         margin: 0 auto;
         text-align: left;
         box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
-
-    //     &::after{
-    //     content: "";
-    //     display: block;
-    //     width: 226px;
-    //     height: 228px;
-    //     background-color: #f38181;
-    //     position: absolute;
-    //     bottom: -10px;
-    //     left: -10px;
-    //     z-index: 2;
-    //     }
     }
 
     &__btn{
@@ -147,12 +215,68 @@
         }
 
         .consalt2__item-text::before{
-            left: -15px;
+            left: -18px;
         }
 
         .consalt2__btn{
             width: 530px;
             height: 70px;
+        }
+
+        .consalt2__list-item::after{
+            left: -15px;
+        }
+
+        .consalt2__list-item::before{
+            right: 14px;
+        }
+    }
+
+    @media (min-width: 1200px){
+        .container{
+            width: 1170px;
+        }
+
+        .consalt2__title{
+            width: 1150px;
+            font-size: 48px;
+            line-height: 60px;
+            letter-spacing: -1.92px;
+            font-weight: 800;
+            margin-bottom: 100px;
+            padding-top: 88px;
+        }
+
+        .consalt2__item-box{
+            width: 348px;
+            height: 278px;
+        }
+
+        .consalt2__item-text{
+            font-size: 18px;
+            line-height: 35px;
+            letter-spacing: -0.72px;
+        }
+
+        .consalt2__list-item::after{
+            left: -15px;
+            width: 348px;
+            height: 278px;
+        }
+
+        .consalt2__list-item::before{
+            top: -82px;
+            font-size: 120px;
+        }
+
+        .consalt2__btn{
+            width: 810px;
+            height: 110px;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: unset;
+            margin-top: 78px;
+            margin-bottom: 100px;
         }
     }
 }
