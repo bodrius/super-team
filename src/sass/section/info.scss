@@ -214,3 +214,43 @@
   }
 }
 
+// SECTION FOR DESKTOP
+
+@media (min-width: 1200px) {
+  .info__title{
+    width: 442px;
+    text-align: left;
+  }
+
+  .background{
+    margin: 0;
+    margin-bottom: 125px;
+    margin-right: 50px;
+  }
+  
+  .info{
+    position: relative;
+  }
+
+  .infosection{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    margin-bottom: 125px;
+  }
+
+  .infosection__title{
+    text-align: left;
+    width: 555px;
+  }
+
+  .infosection__item-desk{
+    width: 437px;
+    padding-left: 36px;
+  }
+
+  .infosection__item-desk::before{
+    top: 5px;
+    left: 0;
+  }
+}
