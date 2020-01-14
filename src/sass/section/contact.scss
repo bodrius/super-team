@@ -1,0 +1,104 @@
+.contact {
+  background: radial-gradient(closest-corner, rgb(16, 35, 58), rgb(24, 28, 39));
+  padding-bottom: 42px;
+
+  &__starter {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 900;
+    display: block;
+    text-align: left;
+    padding-bottom: 28px;
+    letter-spacing: -0.64px;
+  }
+
+  &__text {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 28px;
+    letter-spacing: -0.56px;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 62px;
+      height: 4px;
+      background-color: $blue-color;
+      margin-bottom: 16px;
+    }
+
+    &-inner {
+      color: #c0c2c4
+    }
+  }
+
+
+  &__title {
+    @extend %title;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    color: $blue-color;
+    padding-bottom: 25px;
+    letter-spacing: -0.8px;
+    text-align: left;
+
+
+    &::before {
+      color: $blue-color;
+      padding-right: 10px;
+    }
+
+    &::after {
+      color: $blue-color;
+    }
+  }
+
+  &__button {
+    width: 260px;
+    padding: 28px 0;
+    background-color: $orange;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+    box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
+  }
+}
+
+@media (min-width: 768px) {
+  .contact{
+    padding: 60px 110px;
+  }
+
+  .contact__starter {
+    width: 650px;
+    font-size: 22px;
+  }
+
+  .contact__text {
+    width: 332px;
+    
+  }
+
+  .contact__text-inner{
+    font-weight: 400;
+  }
+
+  .contact__title {
+    font-size: 40px;
+    line-height: 50px;
+    width: 605px;
+  }
+
+  .contact__button{
+    display: block;
+    width: 530px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,258 @@
+.background{
+  background-image: url(../images/map-mob.png);
+  background-repeat: no-repeat;
+  background-position-y: 666px;
+}
+
+.info__title {
+  @extend %title;
+  width: 197px;
+  margin-bottom: 30px;
+}
+
+.boxmap__title {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left; 
+  font-weight: 800; 
+  width: 263px;
+  margin-bottom: 27px;
+}
+
+.boxmap__list{
+  text-align: left;
+}
+
+.boxmap__list-item{
+  padding-left: 17px;
+}
+
+.boxmap__item-count{
+  color: $blue-color;
+  font-weight: 800;
+  margin-bottom: 11px;
+  font-size: 30px;
+}
+
+.boxmap__item-desk{
+  margin-bottom: 30px;
+  line-height: 25px;
+  letter-spacing: -0.46px;
+  width: 225px;
+  font-size: 14px;
+}
+
+.boxmaptwo{
+  margin-bottom: 30px;
+}
+
+.boxmaptwo__title{
+  text-align: left;
+  margin-bottom: 12px;
+  font-size: 14px;
+  padding-left: 17px;
+}
+
+.boxmaptwo__list{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  width: 248px;
+}
+
+.boxmaptwo__list-item{
+  width: 98px;
+  padding-left: 17px;
+  width: 233px;
+}
+
+.boxmaptwo__list-item:last-child{
+  padding-left: 0;
+}
+
+
+.boxmaptwo__item-count{
+  font-size: 25px;
+  line-height: 25px;
+  color: $blue-color;
+  font-weight: 800;
+  padding-bottom: 7px;
+}
+
+.boxmaptwo__item-desk{
+  font-size: 10px;
+  line-height: 11px;
+  width: 108px;
+}
+
+.infosection__title{
+  @extend %title;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 23px;
+}
+
+.infosection__list-item{
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 20px;
+  position: relative;
+}
+
+.infosection__item-desk::before{
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: $blue-color;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.infosection__item-desk{
+  padding-left: 36px;
+  width: 206px;
+}
+
+// SECTION FOR TABLET VERSION
+@media (min-width: 768px){
+  .info__title{
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .boxmap__title{
+    width: 381px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .boxmap__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .boxmap__list-item{
+    width: 188px;
+    padding: 0;
+  }
+
+  .boxmap__list-item:nth-child(3n+3){
+    margin-right: 0px;
+  }
+
+  .boxmap__item-desk{
+    width: 100%;
+  }
+
+  .boxmaptwo{
+    padding-left: 28px;
+  }
+
+  .boxmaptwo__title{
+    width: 207px;
+  }
+
+  .boxmaptwo__list{
+    width: 290px;
+  }
+
+  .boxmaptwo__list-item:first-child{
+    margin-right: 30px;
+  }
+
+  .background{
+    padding: 55px 0;
+    background-image: url(../images/map.png);
+    background-position: center;
+    background-position-x: 309px;
+    background-position-y: 345px;
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
+    width: 703px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .background::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 700px;
+    height: 660px;
+    background-color: rgb(237, 240, 242);
+    top: 25px;
+    left: -25px;
+    z-index: -5;
+  }
+
+  .infosection{
+    margin-bottom: 55px;
+  }
+
+  .infosection__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .infosection__item-desk{
+    width: 640px;
+    padding-left: 78px;
+  }
+
+  .infosection__item-desk::before{
+    top: 5px;
+    left: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info__title{
+    width: 473px;
+    text-align: left;
+    margin: 80px 0;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 144px;
+    align-items: flex-end;
+  }
+
+  .background{
+    margin: 0;
+  }
+
+  .infosection{
+    width: 400px;
+    margin-bottom: 0;
+  }
+
+  .infosection__title{
+    text-align: left;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  
+  .infosection__item-desk::before{
+    top: 2px;
+    left: 0px;
+  }
+
+  .infosection__item-desk{
+    padding-left: 20px;
+    width: 405px;
+  }
+}
