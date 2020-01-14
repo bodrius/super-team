@@ -214,3 +214,40 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .info__title{
+    width: 473px;
+    text-align: left;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 144px;
+    align-items: flex-end;
+  }
+
+  .background{
+    margin: 0;
+  }
+
+  .infosection{
+    width: 400px;
+    margin-bottom: 0;
+  }
+
+  .infosection__title{
+    text-align: left;
+  }
+
+  
+  .infosection__item-desk::before{
+    top: 2px;
+    left: 0px;
+  }
+
+  .infosection__item-desk{
+    padding-left: 20px;
+    width: 405px;
+  }
+}
