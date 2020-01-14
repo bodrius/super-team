@@ -214,43 +214,40 @@
   }
 }
 
-// SECTION FOR DESKTOP
-
 @media (min-width: 1200px) {
   .info__title{
-    width: 442px;
+    width: 473px;
     text-align: left;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 144px;
+    align-items: flex-end;
   }
 
   .background{
     margin: 0;
-    margin-bottom: 125px;
-    margin-right: 50px;
-  }
-  
-  .info{
-    position: relative;
   }
 
   .infosection{
-    position: absolute;
-    bottom: 15px;
-    right: 0;
-    margin-bottom: 125px;
+    width: 400px;
+    margin-bottom: 0;
   }
 
   .infosection__title{
     text-align: left;
-    width: 555px;
+  }
+
+  
+  .infosection__item-desk::before{
+    top: 2px;
+    left: 0px;
   }
 
   .infosection__item-desk{
-    width: 437px;
-    padding-left: 36px;
-  }
-
-  .infosection__item-desk::before{
-    top: 5px;
-    left: 0;
+    padding-left: 20px;
+    width: 405px;
   }
 }
