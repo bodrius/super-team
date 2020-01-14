@@ -74,3 +74,24 @@
     }
   }
 }
+
+@media (min-width: 1200px){
+  .container{
+    width: 620px;
+  }
+
+  .footer{
+    background-image: url(../images/bckground/bckdesktop.jpg);
+
+    &__btn{
+      font-size: 30px;
+      line-height: 60px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    .footer{
+      background-image: url(../images/bckground/bckdesktop@2x.jpg);
+    }
+  }
+}
