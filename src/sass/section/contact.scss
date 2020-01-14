@@ -70,36 +70,82 @@
 }
 
 @media (min-width: 768px) {
-  .contact{
+  .contact {
     padding: 60px 0;
-  }
-  
-  .contact__starter {
-    font-size: 22px;
-  }
-  
-  .contact__box{
-    padding-left: 45px;
-  }
 
-  .contact__text{
-    width: 332px;
-  }
-  
-  .contact__text-inner{
-    font-weight: 400;
-  }
 
-  .contact__title {
-    font-size: 40px;
-    line-height: 50px;
-  }
+    &__starter {
+      font-size: 22px;
+    }
 
-  .contact__button{
-    display: block;
-    width: 530px;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
+    &__box {
+      padding-left: 45px;
+    }
+
+    &__text {
+      width: 332px;
+
+
+      &-inner {
+        font-weight: 400;
+      }
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__button {
+      display: block;
+      width: 530px;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    padding: 100px 0;
+
+    &__box {
+      padding: 0;
+      position: relative;
+    }
+
+    &__starter {
+      width: 683px;
+      font-size: 30px;
+      line-height: 35px;
+      padding-bottom: 68px;
+    }
+
+    &__text {
+      position: absolute;
+      top: 173px;
+      right: 40px;
+      font-size: 18px;
+      line-height: 28px;
+
+
+      &::before {
+        height: 2px;
+      }
+    }
+
+    &__title {
+      width: 730px;
+      font-size: 48px;
+      line-height: 1.2;
+      padding-bottom: 68px;
+    }
+
+    &__button {
+      width: 683px;
+      font-size: 30px;
+      padding: 40px 0;
+    }
   }
 }
