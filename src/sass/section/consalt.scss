@@ -44,18 +44,14 @@
   }
 
   @media (min-width: 768px) {
-    .container {
-      width: 620px;
+    .consalt1__title {
+      font-size: 30px;
+      line-height: 40px;
     }
 
-    .consalt1__title{
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .consalt1__item-text{
-        font-size: 16px;
-        line-height: 22px;
+    .consalt1__item-text {
+      font-size: 16px;
+      line-height: 22px;
     }
 
   }
@@ -73,7 +69,6 @@
 
   @media (min-width: 1200px) {
     .container {
-      width: 1140px;
       padding-top: 120px;
     }
 
@@ -212,10 +207,6 @@
   }
 
   @media (min-width: 768px) {
-    .container {
-      width: 748px;
-    }
-
     .consalt2__title {
       width: 530px;
       margin: 0 auto;
@@ -223,9 +214,9 @@
       line-height: 40px;
     }
 
-    .consalt2__item-text{
-        font-size: 16px;
-        line-height: 22px;
+    .consalt2__item-text {
+      font-size: 16px;
+      line-height: 22px;
     }
 
     .consalt2__list {
@@ -252,10 +243,6 @@
   }
 
   @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-
     .consalt2__title {
       width: 1150px;
       font-size: 48px;
