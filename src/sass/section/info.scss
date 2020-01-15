@@ -182,24 +182,12 @@
     background-position: center;
     background-position-x: 309px;
     background-position-y: 345px;
-    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16),
+                -18px 18px 0px 0px rgba(0, 0, 0, 0.16);
     width: 703px;
     margin: 0 auto;
     margin-bottom: 51px;
-    position: relative;
     background-color: #fff;
-  }
-
-  .background-info::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 700px;
-    height: 660px;
-    background-color: rgb(237, 240, 242);
-    top: 25px;
-    left: -25px;
-    z-index: -5;
   }
 
   .infosection {
@@ -265,7 +253,7 @@
 
   .infosection__item-desk {
     padding-left: 20px;
-    width: 100%;
+    
   }
 
   .infosection__list-item{
