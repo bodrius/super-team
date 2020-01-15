@@ -1,5 +1,5 @@
 .section-about {
-  padding-left: 20px;
+
 
   &__title {
     @extend %title;
@@ -50,7 +50,7 @@
         content: '0'counter(adwards-counter);
         display: block;
         position: absolute;
-        top: -45px;
+        top: -50px;
         right: -3px;
         font-size: 70px;
         font-weight: 700;
@@ -74,7 +74,7 @@
           position: absolute;
           content: '';
           top: -24px;
-          left: -20px;
+          left: -15px;
           height: 2px;
           width: 64px;
           background-color: $blue-color;
@@ -87,7 +87,7 @@
         text-align: left;
         line-height: 21px;
         padding-left: 20px;
-        padding-bottom: 20px;
+
         font-weight: 800;
 
         &-inner {
@@ -136,7 +136,7 @@
   }
 }
 
-.background {
+.background-about {
   position: relative;
 
   &::before {
@@ -178,5 +178,154 @@
     &-item {
       filter: invert(70%)
     }
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .partners{
+    padding-left: 20px;
+  }
+  .section-about__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 40px;
+
+  }
+
+  .section-about__title-part {
+    display: inline-flex;
+  }
+
+  .rewards__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rewards__list-item {
+    margin-bottom: 0;
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16), -20px 20px 0 0 #d7d9db;
+    padding-bottom: 30px;
+    width: 226px;
+
+  }
+
+  .firts-reward {
+    padding-bottom: 72px;
+  }
+
+  .second-reward {
+    padding-bottom: 14px;
+  }
+
+  .third-reward {
+    padding-bottom: 20px;
+  }
+
+  .go-for {
+    width: 382px;
+    margin: 0 auto;
+  }
+
+  .background-about::before {
+    left: 83%;
+    top: 42%;
+
+  }
+
+  .partners__title {
+    margin-left: 0px;
+  }
+
+  .partners__images {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 145px;
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+
+  .partners__images-item {
+    padding: 0 18px;
+    display: flex;
+  }
+
+  .epam {
+    order: 1;
+  }
+
+  .nagel {
+    order: 2;
+  }
+
+  .crytek {
+    order: 4;
+  }
+
+  .ciklum {
+    order: 3;
+  }
+
+  .inovecs {
+    order: 10;
+  }
+
+  .softserve {
+    order: 5;
+
+  }
+
+  .globallogic {
+    order: 6;
+
+  }
+
+  .alfabank {
+    order: 9;
+
+  }
+
+
+  .goiteens {
+    order: 7;
+
+
+  }
+
+  .infopulse {
+    order: 10;
+
+
+  }
+
+  .ubisoft {
+    order: 14;
+
+
+  }
+
+  .luxoft {
+    order: 13;
+    width: 72px;
+    height: 38px;
+  }
+
+  .lenal {
+    order: 15;
+  }
+
+  .terrasoft {
+    order: 16;
+  }
+
+  .grossum {
+    order: 11;
+
+  }
+
+  .monster {
+    order: 12;
   }
 }
