@@ -47,7 +47,13 @@
 
   .footer-logo{
     padding-top: 15px;
+
+    &-image{
+      padding-left: 64px;
+    }
   }
+
+
 
   .footer {
     background-image: url(../images/bckground/bcktablet.jpg);
@@ -67,6 +73,30 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .footer {
       background-image: url(../images/bckground/bcktablet@2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 1200px){
+
+  .footer{
+    background-image: url(../images/bckground/bckdesktop.jpg);
+
+    &__btn{
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 1.2px;
+    }
+
+    &-logo-image{
+      padding-left: 60px;
+      }
+    
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    .footer{
+      background-image: url(../images/bckground/bckdesktop@2x.jpg);
     }
   }
 }
