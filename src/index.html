@@ -8,6 +8,28 @@
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+
+    <!-- endinject -->
+    <script>
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       100,
+          callback:     function(box) {
+            
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+      document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+      };
+    </script>
   </head>
 
   <body>
@@ -17,8 +39,7 @@
     //= ./html/contact.html
     //= ./html/about.html
     //= ./html/footer.html
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
+    
+    
   </body>
 </html>
