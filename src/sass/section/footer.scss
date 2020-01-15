@@ -48,7 +48,13 @@
 
   .footer-logo{
     padding-top: 15px;
+
+    &-image{
+      padding-left: 64px;
+    }
   }
+
+
 
   .footer {
     background-image: url(../images/bckground/bcktablet.jpg);
@@ -78,9 +84,15 @@
     background-image: url(../images/bckground/bckdesktop.jpg);
 
     &__btn{
-      font-size: 30px;
+      font-size: 60px;
       line-height: 60px;
+      letter-spacing: 1.2px;
     }
+
+    &-logo-image{
+      padding-left: 60px;
+      }
+    
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi){
