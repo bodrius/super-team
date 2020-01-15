@@ -112,7 +112,12 @@
 
     &__box {
       padding: 0;
-      position: relative;
+    }
+
+    &__desk {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
     }
 
     &__starter {
@@ -123,9 +128,6 @@
     }
 
     &__text {
-      position: absolute;
-      top: 173px;
-      right: 40px;
       font-size: 18px;
       line-height: 28px;
 
