@@ -185,11 +185,103 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    
+
   }
 
   .contact-btn {
     letter-spacing: 0.32px;
     padding: 14px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-header {
+    width: 1200px;
+
+    .header {
+      padding-top: 36px;
+      padding-bottom: 98px;
+
+      &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__text-content {
+        width: 680px;
+      }
+
+      &__info {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      &__tittle {
+        font-size: 60px;
+        line-height: 70px;
+      }
+
+      &__desc {
+        font-size: 35px;
+        line-height: 42px;
+      }
+    }
+
+    .logo {
+      margin-bottom: 70px;
+    }
+
+    .meeting-info {
+      &__desc {
+        font-size: 30px;
+        letter-spacing: -1.2px;
+      }
+
+      &__date {
+        font-size: 55px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-form__input {
+
+      &:not(:last-child) {
+        margin-bottom: 34px;
+      }
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    .contact-btn {
+      font-size: 22px;
+    }
+
+    .form-box {
+      width: 472px;
+    }
+
+    .contact-us {
+      padding: 46px 34px;
+      text-align: left;
+
+      &__desc {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      &__tittle {
+        font-size: 35px;
+        line-height: 42px;
+        width: 100%;
+      }
+    }
   }
 }
