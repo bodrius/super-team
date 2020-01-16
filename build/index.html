@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Super Team</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endinject --> 
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="section-header">
+          <nav class="site-menu">
+            <a href="#" class="logo">
+              <img src="./images/logo.png" alt="logo" width="100" height="30">
+            </a>
+          </nav>
+          <div class="header__box">
+            <div class="header__text-content">
+              <h1 class="visually-hidden">IT Education</h1>
+              <p class="header__info">Бесплатная презентация для тех, кто хочет сменить профессию и начать карьеру в
+                IT-сфере</p>
+              <h2 class="header__tittle">Узнай за 1 час каким может быть твой путь в IT</h2>
+              <p class="header__desc">Как с нуля всего за 3-5 месяцев получить все необходимые знания и навыки для
+                уверенного стартa карьеры в IT.</p>
+              <div class="meeting-info">
+                <p class="meeting-info__desc">Ближайшая встреча</p>
+                <p class="meeting-info__date">Киев, 16 декабря 19:00</p>
+              </div>
+            </div>
+            <div class="form-box">
+              <section class="contact-us">
+                <h2 class="contact-us__tittle">Оставьте заявку на участие в бесплатной презентации</h2>
+                <p class="contact-us__desc">С вами свяжется карьерный консультант и ответит на вопросы.</p>
+                <form action="#" class="contact-form">
+                  <input type="text" class="contact-form__input" placeholder="Имя" name="name" required pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+                  <input type="email" class="contact-form__input" placeholder="Email" name="email" required>
+                  <input type="tel" class="contact-form__input" placeholder="Телефон" name="phone" required pattern="[0-9]{10}">
+                  <button class="contact-form__btn animated pulse">оставить заявку</button>
+                </form>
+              </section>
+              <p class="header__conf">Политика конфиденциальности</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="consalt1">
+        <div class="consalt1__container container">
+            <h2 class="consalt1__title">На консультации ты получишь ответы на все ключевые вопросы про IT</h2>
+            <ul class="consalt1__list">
+                <li class="consalt1__list-item"><p class="consalt1__item-text">Что из себя представляет IT-сфера в Украине на самом деле?</p></li>
+                <li class="consalt1__list-item"><p class="consalt1__item-text">Почему IT-сфера растет даже в кризис, а IT компании обеспечивают идеальные условия работы для специалистов?</p></li>
+                <li class="consalt1__list-item"><p class="consalt1__item-text">Какие направления есть в IT рынке и что нужно для старта в каждом из них? </p></li>
+                <li class="consalt1__list-item"><p class="consalt1__item-text">За что специалисты с 3-х летним опытом в IT получают зарплаты по <span class="consalt1__item-text-bold">$2000-3500?</span></p></li>
+                <li class="consalt1__list-item"><p class="consalt1__item-text">Что нужно сделать, чтобы уже через <span class="consalt1__item-text-bold">3-5 месяцев</span> начать карьеру в IT и получить первую работу с ЗП от <span class="consalt1__item-text-bold">$700</span> до <span class="consalt1__item-text-bold">$1200</span>?</p></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="consalt2">
+        <div class="consalt2__container container">
+            <h2 class="consalt2__title">Также вы получите личную консультацию по старту карьеры_</h2>
+            <ul class="consalt2__list">
+                <li class="consalt2__list-item"><div class="consalt2__item-box"><p class="consalt2__item-text">Определите какое направление будет легче, интересней и быстрее освоить <span class="consalt2__item-text-bold">именно вам</span>.</p></div></li>
+                <li class="consalt2__list-item"><div class="consalt2__item-box"><p class="consalt2__item-text">Вместе с консультантом сформируете пошаговый план входа в IT <span class="consalt2__item-text-bold">с учетом ваших текущих знаний</span> и навыков.</p></div></li>
+                <li class="consalt2__list-item"><div class="consalt2__item-box"><p class="consalt2__item-text">Получите доступ <span class="consalt2__item-text-bold">к 3-м развернутым видео</span> по ключевым направлениям в IT, чтобы самостоятельно изучить все детали.</p></div></li>
+            </ul>
+            <a href="#header" class="consalt2__btn" onclick="smoothScroll('#header')">Получить бесплатный доступ ко всем материалам</a>
+        </div> 
+    </section>
+    <section class="info ">
+      <div class="container">
+        <h2 class="info__title"> Почему сфера IT так интересна </h2>
+        <div class="wrapper">
+        <div class="background-info">
+        <div class="boxmap">
+          <h3 class="boxmap__title"> Сегодня подготовили для вас обзор рынка
+            из отчета ассоциации  IT Ukraine</h3>
+          <ul class="boxmap__list">
+            <li class="boxmap__list-item">
+              <p class="boxmap__item-count">12634</p>
+              <p class="boxmap__item-desk">IT-компании зарегистрированы в Украине</p>
+            </li>
+            <li class="boxmap__list-item">
+              <p class="boxmap__item-count">2500$</p>
+              <p class="boxmap__item-desk"> Средний доход IT-специалиста</p>
+            </li>
+            <li class="boxmap__list-item">
+              <p class="boxmap__item-count">127тыс.</p>
+              <p class="boxmap__item-desk"> Человек работает Украинской IT-сфере сейчас</p>
+            </li>
+            <li class="boxmap__list-item">
+                <p class="boxmap__item-count">2000</p>
+                <p class="boxmap__item-desk">Новых IT-компаний появилось за 2 года</p>
+              </li>
+              <li class="boxmap__list-item">
+                <p class="boxmap__item-count">83%</p>
+                <p class="boxmap__item-desk">Всех  затрат IT компаний- это затраты на оплату труда разработчиков</p>
+              </li>
+              <li class="boxmap__list-item">
+                <p class="boxmap__item-count">200тыс.</p>
+                <p class="boxmap__item-desk">IT-специалистов по прогнозам будет в стране через 4-5 лет</p>
+              </li>
+          </ul>
+          </div>
+          <div class="boxmaptwo">
+              <h3 class="boxmaptwo__title">Доход IT-шников превышает среднюю зарплату по другим отраслям</h3>
+              <ul class="boxmaptwo__list">
+                  <li class="boxmaptwo__list-item">
+                      <p class="boxmaptwo__item-count">в 7 раз</p>
+                      <p class="boxmaptwo__item-desk">при официальном трудоустройстве IT-специалиста</p>
+                  </li>
+                  <li class="boxmaptwo__list-item">
+                    <p class="boxmaptwo__item-count">в 7,8 раз</p>
+                    <p class="boxmaptwo__item-desk">при работе через ФОП</p>
+                </li>
+              </ul>
+          </div>
+        </div>
+          <div class="infosection">
+              <h2 class="infosection__title"> При этом IT компании предлагают... </h2>
+              <ul class="infosection__list">
+                  <li class="infosection__list-item">
+                      <p class="infosection__item-desk">Стабильно высокие зарплаты в долларах.
+                    </p>
+                  </li>
+                  <li class="infosection__list-item">
+                    <p class="infosection__item-desk">Стабильный карьерный рост согласно 
+                        вашим реальным знаниям и навыкам.</p>
+                </li>
+                <li class="infosection__list-item">
+                    <p class="infosection__item-desk">Комплексный соц. пакет.</p>
+                </li>
+                <li class="infosection__list-item">
+                    <p class="infosection__item-desk">Отличные условия труда в современных офисах.</p>
+                </li>
+                <li class="infosection__list-item">
+                    <p class="infosection__item-desk">Гибкий рабочий график и возможность работы 
+                        даже из дома.</p>
+                </li>
+              </ul>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="contact__box">
+          <p class="contact__starter"> Устал растрачивать свой
+            потенциал, работая за копейки
+            в стагнирующей отрасли
+            или на ненависной тебе работе?</p>
+          <div class="contact__desk">
+            <p class="contact__text">Сейчас на IT рынке работы намного больше, чем квалифицированных кадров, способных ее
+              выполнять.
+              <span class="contact__text-inner"> Работы, за которую платят много
+                и без задержек. Потому что конкуренция
+                за толковых специалистов между компаниями крайне высока. И эта тенденция будет только усиливаться.</span>
+            </p>
+            <div class="contact__deskbox">
+              <h2 class="contact__title">Узнай, как именно начнется
+                твой путь в IT_ </h2>
+              <a href="#header" class="contact__button animated pulse" onclick="smoothScroll('#header')">ХОЧУ УЗНАТЬ СВОЙ ПУТЬ В IT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-about section">
+      <div class="container">
+        <div class="padding-cont">
+          <h2 class="section-about__title">Кто мы такие<span class="section-about__title-part">
+              и почему всё это
+              рассказываем_ </span></h2>
+          <div class="desk-order">
+            <div class="rewards">
+              <h3 class="rewards__text">Награды</h3>
+              <ul class="rewards__list">
+                <li class="rewards__list-item rewards__list-item--first">
+                  <h3 class="rewards__list-item-title">Best it education 2015</h3>
+                  <p class="rewards__list-item-text firts-reward"> Награждена компания GoIt
+                    <span class="rewards__list-item-text-inner">за вклад в подготовку сильных Junior-специалистов</span></p>
+                </li>
+                <li class="rewards__list-item rewards__list-item--second">
+                  <div class="rewards__list-item-title">Ukranian <p>IT Awards 2016</p>
+                  </div>
+                  <p class="rewards__list-item-text second-reward"> Награжден сооснователь GoIT Андрей Пивоваров
+                    <span class="rewards__list-item-text-inner">За выдающийся вклад в IT-обучение украинских
+                      Junior-разработчиков.</span>
+                  </p>
+                </li>
+                <li class="rewards__list-item rewards__list-item--third">
+                  <h3 class="rewards__list-item-title">Украинская Народная Премия 2018</h3>
+                  <p class="rewards__list-item-text third-reward"> Победа в номинации
+                    IT-образование 2018
+                    <span class="rewards__list-item-text-inner">Всеукраинский национальный проект определил GoIT лидером
+                      в отрасли IT образования</span></p>
+                </li>
+              </ul>
+            </div>
+            <div class="desktop">
+              <div class="go-for">
+                <div class="background-about">
+                  <h3 class="go-for__title"> Go for IT</h3>
+                  <h4 class="go-for__info">GoIT выиграла тендер
+                    ПР ООН Украина</h4>
+                </div>
+                <p class="go-for__text">На реализацию социального проекта
+                  по бесплатному обучению Frontend. Мы стали самой молодой компанией-партнером ПР ООН.
+                  В рамках проекта Go for IT мы обязались обучить Frontend-разработке 300 переселенцев.</p>
+              </div>
+              <div class="partners">
+                <h3 class="partners__title">Партнеры</h3>
+                <ul class="partners__images">
+                  <li class="partners__images-item epam ">
+                    <img src="../images/partners/epam.png" alt="not available" width="59" height="21" class="epam">
+                  </li>
+                  <li class="partners__images-item nagel">
+                    <img src="../images/partners/nagel.png" alt="not available" width="72" height="38" class="nagel">
+                  </li>
+                  <li class="partners__images-item crytek">
+                    <img src="../images/partners/crytek.png" alt="not available" width="80" height="27" class="crytek">
+                  </li>
+                  <li class="partners__images-item ciklum">
+                    <img src="../images/partners/ciklum.png" alt="not available" width="138" height="29" class="ciklum">
+                  </li>
+                  <li class="partners__images-item inovecs">
+                    <img src="../images/partners/inovecs.png" alt="not available" width="92" height="16" class="inovecs">
+                  </li>
+                  <li class="partners__images-item softserve">
+                    <img src="../images/partners/softserve.png" alt="not available" width="117" height="17"
+                      class="softserve">
+                  </li>
+                  <li class="partners__images-item globallogic">
+                    <img src="../images/partners/globallogic.png" alt="not available" width="111" height="20"
+                      class="globallogic">
+                  </li>
+                  <li class="partners__images-item alfabank">
+                    <img src="../images/partners/alfabank.png" alt="not available" width="109" height="29" class="alfabank">
+                  </li>
+                  <li class="partners__images-item goiteens">
+                    <img src="../images/partners/goiteens.png" alt="not available" width="86" height="23" class="goiteens">
+                  </li>
+                  <li class="partners__images-item infopulse">
+                    <img src="../images/partners/infopulse.png" alt="not available" width="76" height="19"
+                      class="infopulse">
+                  </li>
+                  <li class="partners__images-item ubisoft">
+                    <img src="../images/partners/ubisoft.png" alt="not available" width="46" height="24" class="ubisoft">
+                  </li>
+                  <li class="partners__images-item luxoft">
+                    <img src="../images/partners/luxoft.png" alt="not available" width="109" height="29" class="luxoft">
+                  </li>
+                  <li class="partners__images-item lenal">
+                    <img src="../images/partners/lenal.png" alt="not available" width="77" height="19" class="lenal">
+                  </li>
+                  <li class="partners__images-item terrasoft">
+                    <img src="../images/partners/terrasoft.png" alt="not available" width="81" height="16"
+                      class="terrasoft">
+                  </li>
+                  <li class="partners__images-item grossum">
+                    <img src="../images/partners/grossum.png" alt="not available" width="88" height="25" class="grossum">
+                  </li>
+                  <li class="partners__images-item monster">
+                    <img src="../images/partners/monster.png" alt="not available" width="134" height="22" class="monster">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-box">
+              <a href="#header" class="footer__btn" onclick="smoothScroll('#header')">оставить заявку</a>
+              <div class="footer-nav">
+                <a href="#" class="footer-logo">
+                <img src="./images/logo.png" alt="" class="footer-logo-image">
+                </a> 
+                <p class="slogan">Создай свою историю успеха!</p>
+              </div>
+      </div>
+    </footer>
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <script src="js/scripts.js"></script>
+    <!-- endinject -->
+    
+  </body>
+</html>
