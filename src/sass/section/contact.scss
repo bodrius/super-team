@@ -67,6 +67,13 @@
     color: #ffffff;
     box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
     font-weight: 700;
+    border: solid 2px transparent;
+    
+    &:hover{
+      background-color: #fff;
+      color: $orange;
+      border: solid 2px $orange;
+    }
   }
 }
 
@@ -153,6 +160,4 @@
       padding: 40px 0;
     }
   }
-
 }
-
