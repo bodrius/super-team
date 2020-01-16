@@ -11,6 +11,7 @@
 }
 
 .rewards {
+  width: 100%;
   &__text {
     margin-left: 20px;
     width: 100px;
@@ -26,6 +27,7 @@
   }
 
   &__list {
+    width: 100%;
     padding-top: 40px;
     list-style-type: none;
     margin: 0 auto;
@@ -393,7 +395,7 @@
     &__title {
       font-size: 48px;
       line-height: 60px;
-      width: 700px;
+     
       padding-left: 0px;
       padding-bottom: 65px;
 
@@ -406,7 +408,7 @@
   .desk-order {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    
   }
 
   .desktop {
@@ -451,9 +453,10 @@
   .rewards__list {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     &-item {
-      width: 390px;
+      width: 30%;
       padding-bottom: 0px;
       padding-top: 0px;
 
@@ -486,16 +489,19 @@
   .rewards__list-item--first::after {
     left: 60%;
     top: 0%;
+    width: 50%;
   }
 
   .rewards__list-item--second::after {
     left: 60%;
     top: -14%;
+    width: 50%;
   }
 
   .rewards__list-item--third::after {
     left: 50%;
     top: 0%;
+    width: 50%;
   }
 
   .partners {
