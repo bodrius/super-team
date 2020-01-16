@@ -222,11 +222,13 @@
     height: 106px;
     background-color: rgb(255, 112, 42);
     box-shadow: 0px 2px 10px 0px rgba(255, 107, 8, 0.59);
+    border: solid 2px transparent;
 
     &:hover{
       background-color: #fff;
       color: $orange;
       cursor: pointer;
+      border: solid 2px $orange;
     }
   }
 

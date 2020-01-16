@@ -1,6 +1,7 @@
 function smoothScroll(Element) {
 
     Element = document.getElementById(Element);
+
     var selectedPosX = 0;
     var selectedPosY = 0;
     while (Element != null) {
