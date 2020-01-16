@@ -5,12 +5,15 @@
 @import 'helpers/variables.scss';
 @import 'helpers/fonts.scss';
 @import 'helpers/placeholder.scss';
+@import 'helpers/animate.scss';
 @import 'base.scss';
+
 
 @import './section/header.scss';
 @import './section/consalt.scss';
 @import './section/info.scss';
 @import './section/contact.scss';
 @import './section/about.scss';
+
 @import './section/footer.scss';
 

@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -34,6 +38,7 @@ a {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 img {

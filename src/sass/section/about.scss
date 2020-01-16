@@ -1,1 +1,540 @@
+.section-about {
 
+
+  &__title {
+    @extend %title;
+    font-weight: 800;
+    padding-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+.rewards {
+  width: 100%;
+  &__text {
+    margin-left: 20px;
+    width: 100px;
+    @extend %title;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #edf0f2;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__list {
+    width: 100%;
+    padding-top: 40px;
+    list-style-type: none;
+    margin: 0 auto;
+    counter-reset: adwards-counter;
+
+    &-item {
+      padding-top: 40px;
+      width: 240px;
+      margin-bottom: 60px;
+      position: relative;
+      list-style-type: none;
+      padding-bottom: 220px;
+      background-color: #ffffff;
+
+      &--first::after {
+        background-image: url(../images/besteducation.png);
+        top: 57%;
+        left: 30%;
+      }
+
+      &--second::after {
+        background-image: url(../images/premie.png);
+        top: 55%;
+        left: 35%;
+      }
+
+      &--third::after {
+        background-image: url(../images/medal.png);
+        top: 60%;
+        left: 10%;
+      }
+
+      &::before {
+        counter-increment: adwards-counter;
+        content: '0'counter(adwards-counter);
+        display: block;
+        position: absolute;
+        top: -50px;
+        right: -3px;
+        font-size: 70px;
+        font-weight: 700;
+        color: #edf0f2;
+        z-index: -1;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        
+        background-repeat: no-repeat;
+
+      }
+      
+
+      &:first-child {
+        padding-bottom: 140px;
+
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+        padding-bottom: 180px;
+      }
+
+
+
+      &-title {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 26px;
+        width: 146px;
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 18px;
+        position: relative;
+
+
+      }
+
+      &-text {
+        width: 200px;
+        font-size: 14px;
+        text-align: left;
+        line-height: 21px;
+        padding-left: 20px;
+        font-weight: 800;
+
+        &-inner {
+          font-weight: 400;
+          color: #6b6f7a;
+        }
+      }
+    }
+  }
+}
+.rewards__list-item--first::after {
+   width: 35%;
+   height: 35%;
+}
+.rewards__list-item--second::after {
+ width: 30%;
+ height: 40%;
+}
+.rewards__list-item--third::after {
+  width: 80%;
+  height: 40%;
+}
+
+.go-for {
+  margin: 0 auto;
+  padding-top: 60px;
+
+  &__title {
+    margin-left: 20px;
+    width: 100px;
+    @extend %title;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #edf0f2;
+
+  }
+
+  &__info {
+    padding-left: 20px;
+    padding-top: 34px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    text-align: left;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6b6f7a;
+    padding-bottom: 40px;
+  }
+}
+
+.background-about {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url(../images/oon.png);
+    width: 144px;
+    height: 122px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 37%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.partners {
+  &__title {
+    margin-left: 20px;
+    text-align: left;
+    width: 100px;
+    @extend %title;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #edf0f2;
+  }
+
+  &__images {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 245px;
+    min-height: 292px;
+    align-content: space-between;
+
+    &-item {
+      filter: invert(70%)
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section-about {
+    padding-top: 40px;
+  }
+
+  .padding-cont {
+    padding-left: 20px;
+
+  }
+
+  .section-about__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 40px;
+
+
+    &-part {
+      display: inline-flex;
+    }
+  }
+
+  .rewards__list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      margin-bottom: 0;
+      padding-bottom: 30px;
+      width: 226px;
+
+    }
+
+
+    &-item--first::after {
+      top: 64%;
+      left: 30%;
+    }
+
+    &-item--third::after {
+      top: 62%;
+      left: 10%;
+    }
+  }
+
+
+  .go-for {
+    width: 382px;
+    margin: 0 auto;
+  }
+
+  .background-about::before {
+    left: 83%;
+    top: 42%;
+
+  }
+
+  .partners {
+    &__title {
+      margin-left: 0px;
+    }
+
+    &__images {
+      justify-content: space-between;
+      width: 100%;
+      min-height: 145px;
+      margin-left: -18px;
+      margin-right: -18px;
+
+      &-item {
+        padding: 0 18px;
+        display: flex;
+      }
+    }
+
+  }
+
+  .epam {
+    order: 1;
+  }
+
+  .nagel {
+    order: 2;
+  }
+
+  .crytek {
+    order: 4;
+  }
+
+  .ciklum {
+    order: 3;
+  }
+
+  .inovecs {
+    order: 10;
+  }
+
+  .softserve {
+    order: 5;
+
+  }
+
+  .globallogic {
+    order: 6;
+
+  }
+
+  .alfabank {
+    order: 9;
+
+  }
+
+  .goiteens {
+    order: 7;
+  }
+
+  .infopulse {
+    order: 10;
+  }
+
+  .ubisoft {
+    order: 14;
+  }
+
+  .luxoft {
+    order: 13;
+    width: 72px;
+    height: 38px;
+  }
+
+  .lenal {
+    order: 15;
+  }
+
+  .terrasoft {
+    order: 16;
+  }
+
+  .grossum {
+    order: 11;
+
+  }
+
+  .monster {
+    order: 12;
+  }
+  
+ .rewards__list-item--third::after {
+   width: 80%;
+   height: 35%;
+ }
+}
+
+@media (max-width: 1199px) {
+  .rewards__list-item-title::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -24px;
+    left: -15px;
+    height: 2px;
+    width: 64px;
+    background-color: $blue-color;
+  }
+
+  .rewards__list-item {
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16), -20px 20px 0 0 #d7d9db;
+  }
+
+  .firts-reward {
+    padding-bottom: 75px;
+  }
+
+  .second-reward {
+    padding-bottom: 14px;
+  }
+
+  .third-reward {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .padding-cont {
+    padding-left: 20px;
+
+  }
+
+  .section-about {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+     
+      padding-left: 0px;
+      padding-bottom: 65px;
+
+      &-part {
+        display: inline;
+      }
+    }
+  }
+
+  .desk-order {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .desktop {
+    display: flex;
+    order: 1;
+    padding-bottom: 65px;
+  }
+
+  .rewards {
+    order: 2;
+
+    &__text {
+      margin-left: 0px;
+    }
+  }
+
+  .rewards__list-item--first {
+    padding-bottom: 0px;
+  }
+
+  .go-for {
+    width: 370px;
+    padding-top: 0px;
+    margin-right: 128px;
+    text-align: left;
+
+    &__title {
+      margin-left: 0px;
+    }
+
+    &__info {
+      padding-left: 0px;
+      width: 350px;
+    }
+
+    &__text {
+      padding: 0px
+    }
+
+  }
+
+  .rewards__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &-item {
+      width: 30%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+
+      &:first-child {
+        padding: 0px;
+      }
+
+      &:last-child {
+        padding: 0px;
+      }
+
+      &-text {
+
+        padding: 0px;
+      }
+
+      &-title {
+        padding-left: 0px;
+      }
+
+      &::before {
+        transform: rotate(-90deg);
+        font-size: 30px;
+        top: -70px;
+        right: 0;
+      }
+    }
+  }
+
+  .rewards__list-item--first::after {
+    left: 60%;
+    top: 0%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .rewards__list-item--second::after {
+    left: 60%;
+    top: -14%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .rewards__list-item--third::after {
+    left: 50%;
+    top: 0%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .partners {
+    padding-left: 0px;
+
+    &__images {
+      margin: 0;
+
+      &-item {
+        padding: 0;
+        margin-right: 26px;
+      }
+    }
+
+  }
+}
