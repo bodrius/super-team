@@ -76,10 +76,11 @@
       &::after {
         position: absolute;
         content: '';
-        width: 50%;
-        height: 100%;
+        
         background-repeat: no-repeat;
+
       }
+      
 
       &:first-child {
         padding-bottom: 140px;
@@ -122,6 +123,18 @@
       }
     }
   }
+}
+.rewards__list-item--first::after {
+   width: 35%;
+   height: 35%;
+}
+.rewards__list-item--second::after {
+ width: 30%;
+ height: 40%;
+}
+.rewards__list-item--third::after {
+  width: 80%;
+  height: 40%;
 }
 
 .go-for {
@@ -350,6 +363,11 @@
   .monster {
     order: 12;
   }
+  
+ .rewards__list-item--third::after {
+   width: 80%;
+   height: 35%;
+ }
 }
 
 @media (max-width: 1199px) {
@@ -394,6 +412,7 @@
     &__title {
       font-size: 48px;
       line-height: 60px;
+     
       padding-left: 0px;
       padding-bottom: 65px;
 
@@ -406,7 +425,7 @@
   .desk-order {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    
   }
 
   .desktop {
@@ -451,9 +470,10 @@
   .rewards__list {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     &-item {
-      width: 33%;
+      width: 30%;
       padding-bottom: 0px;
       padding-top: 0px;
 
@@ -486,16 +506,19 @@
   .rewards__list-item--first::after {
     left: 60%;
     top: 0%;
+    width: 50%;
   }
 
   .rewards__list-item--second::after {
     left: 60%;
     top: -14%;
+    width: 50%;
   }
 
   .rewards__list-item--third::after {
     left: 50%;
     top: 0%;
+    width: 50%;
   }
 
   .partners {
