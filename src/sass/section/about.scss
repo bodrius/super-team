@@ -76,11 +76,11 @@
       &::after {
         position: absolute;
         content: '';
-        width: 100%;
-        height: 100%;
+        
         background-repeat: no-repeat;
 
       }
+      
 
       &:first-child {
         padding-bottom: 140px;
@@ -123,6 +123,18 @@
       }
     }
   }
+}
+.rewards__list-item--first::after {
+   width: 35%;
+   height: 35%;
+}
+.rewards__list-item--second::after {
+ width: 30%;
+ height: 40%;
+}
+.rewards__list-item--third::after {
+  width: 80%;
+  height: 40%;
 }
 
 .go-for {
@@ -351,6 +363,11 @@
   .monster {
     order: 12;
   }
+  
+ .rewards__list-item--third::after {
+   width: 80%;
+   height: 35%;
+ }
 }
 
 @media (max-width: 1199px) {
