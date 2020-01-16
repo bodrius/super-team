@@ -39,7 +39,7 @@
       list-style-type: none;
       padding-bottom: 20px;
       background-color: #ffffff;
-      box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16), -20px 20px 0 0 #d7d9db;
+
 
       &:last-child {
         margin-bottom: 0px;
@@ -69,16 +69,7 @@
         padding-bottom: 18px;
         position: relative;
 
-        &::before {
-          display: block;
-          position: absolute;
-          content: '';
-          top: -24px;
-          left: -15px;
-          height: 2px;
-          width: 64px;
-          background-color: $blue-color;
-        }
+
       }
 
       &-text {
@@ -181,12 +172,11 @@
   }
 }
 
-
-
 @media (min-width: 768px) {
-  .partners{
+  .partners {
     padding-left: 20px;
   }
+
   .section-about__title {
     text-align: left;
     font-size: 30px;
@@ -206,22 +196,9 @@
 
   .rewards__list-item {
     margin-bottom: 0;
-    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16), -20px 20px 0 0 #d7d9db;
     padding-bottom: 30px;
     width: 226px;
 
-  }
-
-  .firts-reward {
-    padding-bottom: 72px;
-  }
-
-  .second-reward {
-    padding-bottom: 14px;
-  }
-
-  .third-reward {
-    padding-bottom: 20px;
   }
 
   .go-for {
@@ -287,23 +264,16 @@
 
   }
 
-
   .goiteens {
     order: 7;
-
-
   }
 
   .infopulse {
     order: 10;
-
-
   }
 
   .ubisoft {
     order: 14;
-
-
   }
 
   .luxoft {
@@ -327,5 +297,176 @@
 
   .monster {
     order: 12;
+  }
+}
+
+@media (max-width: 1199px) {
+  .rewards__list-item-title::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -24px;
+    left: -15px;
+    height: 2px;
+    width: 64px;
+    background-color: $blue-color;
+  }
+
+  .rewards__list-item {
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16), -20px 20px 0 0 #d7d9db;
+  }
+
+  .firts-reward {
+    padding-bottom: 72px;
+  }
+
+  .second-reward {
+    padding-bottom: 14px;
+  }
+
+  .third-reward {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-about__title {
+    font-size: 48px;
+    line-height: 60px;
+    width: 700px;
+    padding-left: 0px;
+    padding-bottom: 65px;
+  }
+
+  .section-about__title-part {
+    display: inline;
+  }
+
+  .desk-order {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .desktop {
+    display: flex;
+    order: 1;
+  }
+
+  .rewards {
+    order: 2;
+  }
+
+  .go-for {
+    width: 370px;
+    padding-top: 0px;
+    margin-right: 128px;
+    text-align: left;
+  }
+
+  .go-for__title {
+    margin-left: 0px;
+  }
+
+  .go-for__info {
+    padding-left: 0px;
+  }
+
+  .go-for__text {
+    padding-bottom: 65px;
+    padding-left: 0px;
+  }
+
+  .partners {
+    width: 700px;
+    padding-left: 0px;
+  }
+
+  .rewards__text {
+    margin-left: 0px;
+  }
+
+  .rewards__list {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+  }
+
+  .rewards__list-item {
+    width: 390px;
+    padding-bottom: 200px;
+    padding-top: 0px;
+  }
+
+  .rewards__list-item-text {
+    width: 227px;
+    padding: 0px;
+  }
+
+  .rewards__list-item-title {
+    padding-left: 0px;
+  }
+
+  .second-reward {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .rewards__list-item::before {
+    transform: rotate(-90deg);
+    font-size: 30px;
+    top: -70px;
+    right: 0;
+  }
+
+  .partners__images {
+    margin: 0;
+  }
+
+  .partners__images-item {
+    padding: 0;
+    margin-right: 26px;
+
+  }
+
+  .softserve {
+    margin-right: 0px;
+
+  }
+
+  .terrasoft {
+    margin-right: 0px;
+  }
+
+  .infopulse {
+    margin-right: 0px;
+  }
+
+  .second-reward {
+    padding: 0;
+  }
+
+  .rewards__img {
+    position: absolute;
+
+  }
+
+  .firts-reward-img {
+    right: 10%;
+    top: 0%;
+  }
+
+  .second-reward-img {
+    top: -9%;
+    left: 65%;
+  }
+
+  .third-reward-img {
+    top: -2%;
+    left: 50%;
+  }
+
+  .rewards__list-item-text-inner {
+    display: block;
   }
 }
