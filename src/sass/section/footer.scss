@@ -1,0 +1,112 @@
+@media (min-width: 320px) {
+  .footer {
+    background-image: url(../images/bckground/bckmobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 62px;
+    padding-bottom: 34px;
+    width: 100%;
+
+    &__btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: $orange;
+      font-size: 20px;
+      font-weight: 500;
+      border: solid 2px $orange;
+      text-transform: uppercase;
+      margin-bottom: 300px;
+
+      &:hover{
+        background-color: $orange;
+        color: white;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .footer-logo-image {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .slogan {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.56;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../images/bckground/bckmobile@2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan{
+    font-size: 18px;
+    line-height: 60px;
+    margin-left: 12px;
+  }
+
+  .footer-logo{
+    padding-top: 15px;
+
+    &-image{
+      padding-left: 64px;
+    }
+  }
+
+
+
+  .footer {
+    background-image: url(../images/bckground/bcktablet.jpg);
+    padding-bottom: 0px;
+
+    &__btn {
+      font-size: 30px;
+      line-height: 60px;
+      letter-spacing: 0.6px;
+    }
+
+    &-nav{
+      display: flex;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../images/bckground/bcktablet@2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 1200px){
+
+  .footer{
+    background-image: url(../images/bckground/bckdesktop.jpg);
+
+
+    &__btn{
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 1.2px;
+    }
+
+    &-logo-image{
+      padding-left: 60px;
+      }
+    
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    .footer{
+      background-image: url(../images/bckground/bckdesktop@2x.jpg);
+    }
+  }
+}
