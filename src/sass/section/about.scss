@@ -37,12 +37,25 @@
       margin-bottom: 60px;
       position: relative;
       list-style-type: none;
-      padding-bottom: 20px;
+      padding-bottom: 220px;
       background-color: #ffffff;
 
+      &--first::after {
+        background-image: url(../images/besteducation.png);
+        top: 57%;
+        left: 30%;
+      }
 
-      &:last-child {
-        margin-bottom: 0px;
+      &--second::after {
+        background-image: url(../images/premie.png);
+        top: 55%;
+        left: 35%;
+      }
+
+      &--third::after {
+        background-image: url(../images/medal.png);
+        top: 60%;
+        left: 10%;
       }
 
       &::before {
@@ -57,6 +70,27 @@
         color: #edf0f2;
         z-index: -1;
       }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+
+      }
+
+      &:first-child {
+        padding-bottom: 140px;
+
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+        padding-bottom: 180px;
+      }
+
+
 
       &-title {
         text-transform: uppercase;
@@ -78,7 +112,6 @@
         text-align: left;
         line-height: 21px;
         padding-left: 20px;
-
         font-weight: 800;
 
         &-inner {
@@ -95,7 +128,6 @@
   padding-top: 60px;
 
   &__title {
-
     margin-left: 20px;
     width: 100px;
     @extend %title;
@@ -147,7 +179,6 @@
 .partners {
   &__title {
     margin-left: 20px;
-
     text-align: left;
     width: 100px;
     @extend %title;
@@ -173,8 +204,13 @@
 }
 
 @media (min-width: 768px) {
-  .partners {
+  .section-about {
+    padding-top: 40px;
+  }
+
+  .padding-cont {
     padding-left: 20px;
+
   }
 
   .section-about__title {
@@ -183,23 +219,35 @@
     line-height: 40px;
     padding-bottom: 40px;
 
-  }
 
-  .section-about__title-part {
-    display: inline-flex;
+    &-part {
+      display: inline-flex;
+    }
   }
 
   .rewards__list {
     display: flex;
     justify-content: space-between;
+
+    &-item {
+      margin-bottom: 0;
+      padding-bottom: 30px;
+      width: 226px;
+
+    }
+
+
+    &-item--first::after {
+      top: 64%;
+      left: 30%;
+    }
+
+    &-item--third::after {
+      top: 62%;
+      left: 10%;
+    }
   }
 
-  .rewards__list-item {
-    margin-bottom: 0;
-    padding-bottom: 30px;
-    width: 226px;
-
-  }
 
   .go-for {
     width: 382px;
@@ -212,21 +260,24 @@
 
   }
 
-  .partners__title {
-    margin-left: 0px;
-  }
+  .partners {
+    &__title {
+      margin-left: 0px;
+    }
 
-  .partners__images {
-    justify-content: space-between;
-    width: 100%;
-    min-height: 145px;
-    margin-left: -18px;
-    margin-right: -18px;
-  }
+    &__images {
+      justify-content: space-between;
+      width: 100%;
+      min-height: 145px;
+      margin-left: -18px;
+      margin-right: -18px;
 
-  .partners__images-item {
-    padding: 0 18px;
-    display: flex;
+      &-item {
+        padding: 0 18px;
+        display: flex;
+      }
+    }
+
   }
 
   .epam {
@@ -317,7 +368,7 @@
   }
 
   .firts-reward {
-    padding-bottom: 72px;
+    padding-bottom: 75px;
   }
 
   .second-reward {
@@ -330,16 +381,26 @@
 }
 
 @media (min-width: 1200px) {
-  .section-about__title {
-    font-size: 48px;
-    line-height: 60px;
-    width: 700px;
-    padding-left: 0px;
-    padding-bottom: 65px;
+  .padding-cont {
+    padding-left: 20px;
+
   }
 
-  .section-about__title-part {
-    display: inline;
+  .section-about {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+      width: 700px;
+      padding-left: 0px;
+      padding-bottom: 65px;
+
+      &-part {
+        display: inline;
+      }
+    }
   }
 
   .desk-order {
@@ -351,10 +412,19 @@
   .desktop {
     display: flex;
     order: 1;
+    padding-bottom: 65px;
   }
 
   .rewards {
     order: 2;
+
+    &__text {
+      margin-left: 0px;
+    }
+  }
+
+  .rewards__list-item--first {
+    padding-bottom: 0px;
   }
 
   .go-for {
@@ -362,111 +432,83 @@
     padding-top: 0px;
     margin-right: 128px;
     text-align: left;
-  }
 
-  .go-for__title {
-    margin-left: 0px;
-  }
+    &__title {
+      margin-left: 0px;
+    }
 
-  .go-for__info {
-    padding-left: 0px;
-  }
+    &__info {
+      padding-left: 0px;
+      width: 350px;
+    }
 
-  .go-for__text {
-    padding-bottom: 65px;
-    padding-left: 0px;
-  }
+    &__text {
+      padding: 0px
+    }
 
-  .partners {
-    width: 700px;
-    padding-left: 0px;
-  }
-
-  .rewards__text {
-    margin-left: 0px;
   }
 
   .rewards__list {
     display: flex;
-    width: 1200px;
     justify-content: space-between;
+
+    &-item {
+      width: 390px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+
+      &:first-child {
+        padding: 0px;
+      }
+
+      &:last-child {
+        padding: 0px;
+      }
+
+      &-text {
+
+        padding: 0px;
+      }
+
+      &-title {
+        padding-left: 0px;
+      }
+
+      &::before {
+        transform: rotate(-90deg);
+        font-size: 30px;
+        top: -70px;
+        right: 0;
+      }
+    }
   }
 
-  .rewards__list-item {
-    width: 390px;
-    padding-bottom: 200px;
-    padding-top: 0px;
-  }
-
-  .rewards__list-item-text {
-    width: 227px;
-    padding: 0px;
-  }
-
-  .rewards__list-item-title {
-    padding-left: 0px;
-  }
-
-  .second-reward {
-    padding-right: 30px;
-    padding-bottom: 30px;
-  }
-
-  .rewards__list-item::before {
-    transform: rotate(-90deg);
-    font-size: 30px;
-    top: -70px;
-    right: 0;
-  }
-
-  .partners__images {
-    margin: 0;
-  }
-
-  .partners__images-item {
-    padding: 0;
-    margin-right: 26px;
-
-  }
-
-  .softserve {
-    margin-right: 0px;
-
-  }
-
-  .terrasoft {
-    margin-right: 0px;
-  }
-
-  .infopulse {
-    margin-right: 0px;
-  }
-
-  .second-reward {
-    padding: 0;
-  }
-
-  .rewards__img {
-    position: absolute;
-
-  }
-
-  .firts-reward-img {
-    right: 10%;
+  .rewards__list-item--first::after {
+    left: 60%;
     top: 0%;
   }
 
-  .second-reward-img {
-    top: -9%;
-    left: 65%;
+  .rewards__list-item--second::after {
+    left: 60%;
+    top: -14%;
   }
 
-  .third-reward-img {
-    top: -2%;
+  .rewards__list-item--third::after {
     left: 50%;
+    top: 0%;
   }
 
-  .rewards__list-item-text-inner {
-    display: block;
+  .partners {
+    padding-left: 0px;
+
+    &__images {
+      margin: 0;
+
+      &-item {
+        padding: 0;
+        margin-right: 26px;
+      }
+    }
+
   }
 }
