@@ -2,6 +2,7 @@
   padding: 30px 0;
   background-color: #cacdce;
   background-color: rgb(24, 28, 39);
+  box-sizing: content-box;
 
   &__title {
     @extend %title;
